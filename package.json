@@ -1,0 +1,26 @@
+{
+  "name": "js.express",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.13.1",
+    "express-handlebars": "~2.0.1",
+    "express3-handlebars": "~0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rootid/js.express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rootid/js.express/issues"
+  },
+  "homepage": "https://github.com/rootid/js.express"
+}
