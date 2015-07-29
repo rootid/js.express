@@ -1,0 +1,8 @@
+#create the shadow root
+
+select element.
+
+
+var root = $0.createShadowRoot()
+root.innerHTML = "SHADOW ROOT"
+root.innerHTML = "SHADOW <content></content> ROOT"

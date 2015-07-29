@@ -1,0 +1,20 @@
+<!doctype html>
+<html> 
+<head>
+</head>
+<body>
+
+<!--Injecting the style -->
+<button class="red">My Button</button>
+
+<script>
+var button = document.querySelector('button');
+var root = button.createShadowRoot();
+root.innerHTML = '<style>' + 
+    ':host { text-transform: uppercase; color : blue ; width: 100px; height : 90px } ' +
+    '</style>' + 
+    '<content></content>';
+</script>
+
+</body>
+</html>

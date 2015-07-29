@@ -1,0 +1,35 @@
+<!doctype html>
+<html> 
+<head>
+</head>
+<body>
+
+<div id="example3">
+  <span>Light DOM</span>
+</div>
+<script>
+	var container = document.querySelector('#example3');
+	var root1 = container.createShadowRoot();
+	var root2 = container.createShadowRoot();
+
+	var div = document.createElement('div');
+	div.textContent = 'Root 1 FTW';
+	root1.appendChild(div);
+
+	 // HTMLContentElement
+	var content = document.createElement('content');
+	content.select = 'span'; // selects any spans the host node contains
+	root1.appendChild(content);
+
+	var div = document.createElement('div');
+	div.textContent = 'Root 2 FTW';
+	root2.appendChild(div);
+
+	// HTMLShadowElement
+	var shadow = document.createElement('shadow');
+	root2.appendChild(shadow);
+		
+</script>
+
+</body>
+</html>
