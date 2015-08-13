@@ -1,13 +1,11 @@
 var express = require('express');
 var app = express();
 
-
 var pub_dir = __dirname + '/public';
 var view_dir = 
 app.disable('x-powered-by');
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(pub_dir));
-
 
 
 // set up handlebars view engine
